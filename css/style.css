@@ -6,7 +6,7 @@
 .pull-right{
     float: right;
 }
-/*===================BODY==================*/
+================BODY==================*/
 body{
     margin: 0;
     padding: 0;
@@ -28,12 +28,32 @@ header>span{
     color: #fff;
 }
 
-header>div{
-    margin: 65px 40px;
+#drop-nav{
+    margin: 65px 50px 0;
+    color: #fff;
 }
 
-#practice:hover{
-    width:400px;
+#drop-nav:hover #drop-down{
+    display: block;
+}
+
+#drop-down{
+    margin: 0 40px;
+    padding: 0;
+    list-style: none;
+    clear: right;
+    background-color: #fff;
+    display: none;
+}
+
+#drop-down>li{
+    padding: 15px;
+    border: 2px solid #111;
+}
+
+#drop-down>li>a{
+    text-decoration: none;
+    color: #000;
 }
 /*===============HERO====================*/
 #hero{
@@ -116,6 +136,16 @@ main{
     clear: both;
     text-align: center;
 }
+
+#about-button{
+    margin: 45px;
+    background-color: #9c0a10;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 12px;
+    text-decoration: bold;
+    color: #fff;
+}
 /*=============FOOTER=================*/
 footer{
     height: 200px;
@@ -128,6 +158,11 @@ footer{
     position: relative;
     top: 150px;
     right: 10px;
+}
+
+#social-media>a{
+    text-decoration: none;
+    color: #9c0a10;
 }
 
 #copyright{
