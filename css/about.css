@@ -24,7 +24,6 @@ header{
 
 header>span{
     margin: 45px 30px;
-    color: #fff;
 }
 
 header>span>h2>a{
@@ -33,49 +32,24 @@ header>span>h2>a{
 }
 /*===================HERO==================*/
 #hero{
-    height:350px;
+    margin-top:135px;
+    background-image: url(../img/about-img.jpg);
+    height: 350px;
     background-size: cover;
-    background-image: url(../img/contact-img.jpg);
-    margin-top: 135px;
     color: #9c0a10;
     border-bottom: 7px solid #222;
 }
+
 #hero>h1{
     font-size: 75px;
     position: relative;
-    top: 45%;
-    left: 5%;
+    top: 35%;
+    right: 5%;
 }
 
 /*===================MAIN==================*/
-#email-form{
-    width: 48.5%;
-    padding: 0;
-}
-#email-form>iframe{
-    padding: 70px;
-}
-
-#school-info{
-    border-left: 7px solid #9c0a10;
-    padding: 45px 0;
-    width:49%;
-    text-align: center;
-    height: 900px;
-}
-
-#school-info>ul{
-    display: inline-block;
-    padding:0;
-    list-style: none;
-}
-
-#school-info>ul>li{
- padding: 25px;   
-}
-
-#school-info>ul>li>h1{
-    text-decoration: underline;
+main{
+    height:500px;
 }
 /*===================FOOTER==================*/
 footer{
