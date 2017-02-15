@@ -6,11 +6,11 @@
 .pull-right{
     float: right;
 }
-================BODY==================*/
+/*================BODY==================*/
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 /*===================HEADER==================*/
 header{
@@ -19,41 +19,59 @@ header{
     top: 0;
     width: 100%;
     height: 135px;
-    background-color: #222;
-    border-bottom: 4px solid #111;
+    background-color: #111;
+    border-bottom: 2px solid #000;
+    z-index: 1;
 }
 
 header>span{
     margin: 45px 30px;
     color: #fff;
 }
-
-#drop-nav{
-    margin: 65px 50px 0;
-    color: #fff;
+/*==============NAVBAR=================*/
+#side-navbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-left: 5px solid #050505;
 }
 
-#drop-nav:hover #drop-down{
-    display: block;
+#side-navbar>a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    color: #9c0a10;
+    text-decoration: none;
 }
 
-#drop-down{
-    margin: 0 40px;
+#side-navbar>ul{
+    margin: 0;
     padding: 0;
     list-style: none;
-    clear: right;
-    background-color: #fff;
-    display: none;
+    text-align: center;
 }
 
-#drop-down>li{
-    padding: 15px;
-    border: 2px solid #111;
+#side-navbar>ul>li{
+    margin: 0;
+    font-size: 30px;
+    padding: 20px 0;
 }
 
-#drop-down>li>a{
+#side-navbar>ul>li:hover{
+    background-color: #050505;
+}
+
+#side-navbar>ul>li>a{
+    display: block;
     text-decoration: none;
-    color: #000;
+    color: #9c0a10;
 }
 /*===============HERO====================*/
 #hero{
@@ -69,7 +87,7 @@ header>span{
     margin: 0;
     padding: 0;
     position: relative;
-    top: 750px;
+    top: 700px;
     color: #ccc;
     opacity: .3;
 }
@@ -80,21 +98,29 @@ header>span{
     max-height: 815px;
     min-height: 815px;
 }
-/*===============ASIDES====================*/
-#left-aside{
-    display: inline-block;
+/*===============MAIN====================*/
+main{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #9c0a10;
+}
+
+#left-col{
+    margin: 0;
     height: 700px;
-    width: 24.3%;
+    width: 24.5%;
     background-color: #9c0a10;
     border-right: 4px solid #111;
-    text-align: center
+    text-align: center;
 }
 
-#left-aside>h2{
-    margin-top: 35px;
+#left-col>h2{
+    margin: 0;
+    padding-top: 35px;
 }
 
-#left-aside>h2>a{
+#left-col>h2>a{
     color: #111;    
 }
 
@@ -105,7 +131,7 @@ header>span{
 
 #events-list>li{
     width: 100%;
-    border-bottom: 4px solid  #111;
+    border-bottom: 2px solid  #111;
 }
 
 #events-list>li>h4>a{
@@ -113,28 +139,14 @@ header>span{
     text-decoration: none;
 }
 
-#right-aside{
-    margin: 0;
-    padding: 0;
+#center-col{
+    width: 50%;
     height: 700px;
-    width: 24.3%;
-    text-align: center;
-    background-color: #9c0a10;
-    border-left: 4px solid #111;
+    background-color: #fff;
 }
 
-#right-aside>h2{
-    margin-top: 35px;
-    text-decoration: underline;
-}
-/*===============MAIN====================*/
-main{
-    display:inline-block;
-    margin: 0;
-    height: 600px;
-    width: 50%;
-    clear: both;
-    text-align: center;
+#center-col>p{
+    padding: 0 35px;
 }
 
 #about-button{
@@ -142,21 +154,67 @@ main{
     background-color: #9c0a10;
     border-radius: 10px;
     height: 50px;
-    font-size: 12px;
     text-decoration: bold;
+}
+
+#about-button:hover{
+    background-color: #910508;
+}
+
+#about-button>a{
+    text-decoration: none;
     color: #fff;
+    font-size: 15px;
+}
+
+#about-button:hover a{
+    color: #999;
+}
+
+#right-col{
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 24.5%;
+    text-align: center;
+    background-color: #9c0a10;
+    border-left: 4px solid #111;
+}
+
+#right-col>h2{
+    margin-top: 35px;
+    text-decoration: underline;
+}
+
+#right-col>img{
+    border-radius: 50px;
+    height: 150px;
+    width: 70%;
+}
+
+#right-col>p{
+    padding: 15px;
+}
+
+#right-col>a{
+    color: #fff;
+}
+
+#right-col>a:hover{
+    color: #999;
 }
 /*=============FOOTER=================*/
 footer{
-    height: 200px;
+    height: 125px;
     width: 100%;
-    background-color: #222;
+    background-color: #111;
     clear: both;
+    border-top: 2px solid #000;
 }
 
 #social-media{
     position: relative;
-    top: 150px;
+    top: 75px;
     right: 10px;
 }
 
@@ -169,6 +227,6 @@ footer{
     font-size: 12px;
     color: #9c0a10;
     position: relative;
-    top: 170px;
+    top: 95px;
     left: 10px;
 }
