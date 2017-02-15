@@ -121,7 +121,7 @@ main{
 }
 
 #left-col>h2>a{
-    color: #111;    
+    color: #fff;    
 }
 
 #events-list{
@@ -130,13 +130,11 @@ main{
 }
 
 #events-list>li{
+    font-size: 20px;
+    margin-top: 35px;
     width: 100%;
-    border-bottom: 2px solid  #111;
-}
-
-#events-list>li>h4>a{
-    color: #111;
-    text-decoration: none;
+    border-bottom: 2px solid  #fff;
+    color: #fff;
 }
 
 #center-col{
@@ -179,6 +177,7 @@ main{
     text-align: center;
     background-color: #9c0a10;
     border-left: 4px solid #111;
+    color: #fff;
 }
 
 #right-col>h2{
@@ -187,9 +186,10 @@ main{
 }
 
 #right-col>img{
-    border-radius: 50px;
+    border-radius: 30px;
     height: 150px;
     width: 70%;
+    border: 1px solid #111;
 }
 
 #right-col>p{

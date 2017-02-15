@@ -6,7 +6,7 @@
 .pull-right{
     float: right;
 }
-/*===================BODY==================*/
+/*================BODY==================*/
 body{
     margin: 0;
     padding: 0;
@@ -78,44 +78,48 @@ header>span>h2>a{
     text-decoration: none;
     color: #9c0a10;
 }
-/*===================HERO==================*/
-#hero{
-    margin-top:135px;
-    background-image: url(../img/about-img.jpg);
-    height: 350px;
-    background-size: cover;
-    color: #9c0a10;
-    border-bottom: 7px solid #222;
+/*=============MAIN=================*/
+main{
+    margin-top: 135px;
 }
 
-#hero>h1{
-    font-size: 75px;
-    position: relative;
-    top: 35%;
-    right: 5%;
+#upcoming-events{
+    height: 600px;
+    width: 33%; 
+    color: #fff;
+    background-color: #9c0a10; 
+    text-align: center;
+    border-right: 4px solid #111;
 }
 
-/*===================MAIN==================*/
-main>div{
-    height:500px;
-    width:50%;
+#upcoming-events>h1{
+    text-decoration: underline;
+}
+
+#upcoming-events>ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 80%;
+}
+
+#upcoming-events>ul>li{
+    font-size: 25px;
+    padding-top: 50px;
+    border-bottom: 4px solid #fff;
+}
+
+#calendar{
+    height: 600px;
+    width: 66%;
     text-align: center;
 }
 
-main>div>p{
-    padding:0 35px;
+#calendar>iframe{
+    height: 560px;
+    padding: 20px;
 }
-
-#div-left{
-     background-color: #9c0a10;
-     color:#fff;
-}
-
-#div-right{
-    background-color: #fff;
-}
-
-/*===================FOOTER==================*/
+/*=============FOOTER=================*/
 footer{
     height: 125px;
     width: 100%;
