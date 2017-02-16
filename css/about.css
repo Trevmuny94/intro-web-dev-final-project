@@ -94,7 +94,6 @@ header>span>h2>a{
     top: 35%;
     right: 5%;
 }
-
 /*===================MAIN==================*/
 main>div{
     height:500px;
@@ -114,7 +113,6 @@ main>div>p{
 #div-right{
     background-color: #fff;
 }
-
 /*===================FOOTER==================*/
 footer{
     height: 125px;

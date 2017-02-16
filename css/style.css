@@ -28,6 +28,11 @@ header>span{
     margin: 45px 30px;
     color: #fff;
 }
+
+#open-nav:hover{
+    color: #999;
+    cursor: pointer;
+}
 /*==============NAVBAR=================*/
 #side-navbar{
     height: 100%;
