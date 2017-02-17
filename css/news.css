@@ -33,6 +33,11 @@ header>span>h2>a{
     text-decoration: none;
     color: #fff;
 }
+
+#open-nav:hover{
+    color: #999;
+    cursor: pointer;
+}
 /*==============NAVBAR=================*/
 #side-navbar{
     height: 100%;
@@ -78,22 +83,11 @@ header>span>h2>a{
     text-decoration: none;
     color: #9c0a10;
 }
-/*===================HERO==================*/
-#hero{
-    height: 200px;
-    background-color: #9c0a10;
+/*===================MAIN==================*/
+main{
     margin-top: 135px;
-    border-top: 4px solid #222;
-    border-bottom: 4px solid #222;
-    text-align: center;
 }
 
-#hero>h1{
-    padding-top: 30px;
-    font-size: 50px;
-    color: #fff;
-}
-/*===================MAIN==================*/
 #latest-story{
     height: 1000px;
     width: 70%;
@@ -128,6 +122,12 @@ header>span>h2>a{
     border-left: 4px solid #222;
 }
 
+#news-nav>h2{
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+}
+
 #news-nav>div{
     height: 300px;
     width:100%;
@@ -140,11 +140,11 @@ header>span>h2>a{
     width: 200px;
     border-radius: 5px;
     border: 2px solid #222;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 #news-nav>div>p{
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px;   
 }
 /*===================FOOTER==================*/
